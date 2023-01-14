@@ -1,34 +1,22 @@
-<script>
-function getComputerChoice() {
-    const choice = ["rock", "paper", "scissors"];
-
-    let random = Math.floor(Math.random() * choice.length);
-    return (choice[random])
-}
-function playRound(playerSelection, computerSelection) {
-    if (playerSelection === "rock" && computerSelection ==="paper") {
-        return("You Lose! Paper beats Rock");
-    } else if (playerSelection === "rock" && computerSelection ==="scissors"){
-        return("You Win! Rock beats Scissors");
-    } else if (playerSelection === "paper" && computerSelection ==="rock") {
-        return("You Win! Paper beats Rock");
-    } else if (playerSelection === "paper" && computerSelection ==="scissors") {
-        return("You Lose! Scissors beats Paper");
-    } else if (playerSelection === "scissors" && computerSelection ==="paper") {
-        return("You Win! Scissors beats Paper");
-    } else if (playerSelection === "scissors" && computerSelection ==="rock") {
-        return("You Lose! Rock beats Scissors");
-    } else {
-        return("Draw!")
-    }
-}
-function game() {
-    for(let i = 0; i < 5; i++) {
-        let playerChoice = prompt("Make a choice: Rock, Paper, or Scissors");
-        playerChoice = playerChoice.toLowerCase()
-        let computerChoice = getComputerChoice()
-        alert(computerChoice)
-        alert(playRound(playerChoice, computerChoice))
-    }
-}
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper, Scissors Game</title>
+    <script src="/code.js" defer></script>
+</head>
+<body>
+    <div>Choose one:</div>
+    <div class="container-buttons">
+        <button id="rock">Rock</button>
+        <button id = "paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    <div>Computer Choice: <span id="computer-choice"></span></div>
+    <div>Score</div>
+    <div>Computer: <span id="computer-score"></span></div>
+    <div>Player: <span id="player-score"></span></div>
+</body>
+</html>
