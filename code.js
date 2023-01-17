@@ -5,17 +5,26 @@ function getComputerChoice() {
     return (choice[random])
 }
 function resetGame() {
+    // resets scores
     computerScore = 0;
     playerScore = 0;
 
+    // resets score text
     computerScoreText.textContent = computerScore;
     playerScoreText.textContent = playerScore;
+
+    // resets computer choice and result text
+    resultGame.textContent = "";
+    computerSelectionText.textContent = "";
+
+    // reset game winner text
+    gameWinner.textContent = "";
 }
 function checkWinner() {
     if(computerScore > playerScore) {
-        gameWinner.textContent = "Score of 5 reached computer wins!";
+        gameWinner.textContent = "Score of 5 reached computer wins! Press any button to restart.";
     } else {
-        gameWinner.textContent = "Score of 5 reached player wins!";
+        gameWinner.textContent = "Score of 5 reached player wins! Press any button to restart.";
     }
 }
 function updateScore(gameWinner) {
