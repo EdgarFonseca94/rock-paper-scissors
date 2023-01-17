@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock,Paper, Scissors Game</title>
     <script src="/code.js" defer></script>
+    <link href="https://fonts.cdnfonts.com/css/tetris" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <div>Choose one:</div>
-    <div class="container-buttons">
-        <button id="rock">Rock</button>
-        <button id = "paper">Paper</button>
-        <button id="scissors">Scissors</button>
+    <div class = "header">Rock, Paper, Scissors</div>
+    <div class="container">
+        <div class = "text">Choose one:</div>
+        <div class="container-buttons">
+            <button id="rock-btn" value="rock"><img src="/images/hand-rock-4-48.png"/></button>
+            <button id = "paper-btn" value ="paper"><img src="/images/hand-paper-3-48.png"/></button>
+            <button id="scissors-btn" value="scissors"><img src="/images/hand-scissors-1-48.png"/></button>
+        </div>
+        <div class="text">Computer Choice: <span id="computer-choice"></span></div>
+        <div class="text">Result: <span id = 'result'></span></div>
+        <div class="text">Computer: <span id="computer-score"></span></div>
+        <div class="text">Player: <span id="player-score"></span></div>
+        <div><span id="game-winner"></span></div>
     </div>
-    <div>Computer Choice: <span id="computer-choice"></span></div>
-    <div>Score</div>
-    <div>Computer: <span id="computer-score"></span></div>
-    <div>Player: <span id="player-score"></span></div>
 </body>
 </html>

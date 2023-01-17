@@ -1,0 +1,25 @@
+body {
+    background-color: navy;
+}
+img {
+    width: 100px;
+}
+.header {
+    color: yellow;
+    font-size: 30px;
+    padding: 20px;
+    background: #090953;
+    font-family: 'Tetris', sans-serif;
+    text-align: center;
+}
+.container {
+    text-align: center;
+}
+.text {
+    color: white;
+    font-size: 20px;
+}
+#game-winner {
+    color: red;
+    font-size: 30px;
+}
